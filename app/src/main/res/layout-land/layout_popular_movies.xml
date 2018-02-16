@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/img_pop_movie"
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        tools:src="@android:mipmap/sym_def_app_icon" />
+
+    <ImageView
+        android:id="@+id/img_play_icon_pop_movie"
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="170dp"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:src="@drawable/player_icon" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/img_pop_movie"
+        android:layout_toEndOf="@id/img_pop_movie"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lbl_tle_movie_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Thor Ragnork 2"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/lbl_des_movie_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:textSize="16sp"
+            android:ellipsize="start"
+            tools:text="somekind of movie. That is out of my mind"/>
+    </LinearLayout>
+
+</RelativeLayout>
